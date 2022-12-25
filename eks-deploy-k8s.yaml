@@ -40,3 +40,10 @@ spec:
   type: LoadBalancer
   selector:
     app: springboot-app
+    
+ strategy:
+   type: RollingUpdate
+   rollingUpdate:
+     maxSurge: 1
+     maxUnavailable: 1
+    
